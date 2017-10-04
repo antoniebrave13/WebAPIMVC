@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>$http Service | AngularJS</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular-sanitize.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/abdmob/x2js/master/xml2json.min.js"></script>
+    <script type="text/javascript" src="C:\Users\antoniebrave\Documents\Visual Studio 2015\Projects\FinalEmployeeApi\employee.js"></script>
+
+</head>
+
+
+<body ng-controller="Controller">
+
+    <table border="1">
+        <tr ng-repeat="e in employees">
+            <td>{{e.id}}</td>
+            <td>{{e.Name}}</td>
+            <td>{{e.Address}}</td>
+            <td>{{e.Age}}</td>
+            <td>{{e.Salary}}</td>
+        </tr>
+    </table>
+
+    <P>{{employees}}</P>
+
+    <br />
+    <br />
+    <br />
+    Name: <input id="Name" type="text" /><br />
+    Address: <input id="Address" type="text" /><br />
+    Age: <input id="Age" type="number" /><br />
+    Salary: <input id="Salary" type="number" /><br />
+    
+    <button id="Save">Save</button>
+    S
+
+    <br />
+    Add Allowance: <input id="NewAllo" type="number" /><br />
+    Employee ID: <input id="eid" type="number" /><br />
+    <button id="Update">Update</button>
+
+    <br />
+    <br />
+    <br />
+    ID to delete: <input id="empid" type="number" /><br />
+    <button id="Delete">Delete</button>
+
+</body>
+</html>
